@@ -1,8 +1,7 @@
 import os
 import csv
-import pandas as pd
 #initializing path
-csv_path = os.path.join("python-challenge","PyBank","Resources","budget_data.csv")
+csv_path = os.path.join("PyBank","Resources","budget_data.csv")
 #setting variables to track (name denoted in parenthesis): months, net profit over period (net), sum of change between months (old, diffsum) and then the average change between months(avg), highest monthly increase in profits (top), highest monthly decrease in profits (bottom)
 months=0
 net = 0
