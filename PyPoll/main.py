@@ -59,3 +59,13 @@ winner = candvotes.index(i)
 winner = candnames[winner]
 
 print(f'Winner: {winner}\n ----------------------')
+
+#writing results to a text file, titled: 'results.txt'
+with open('results.txt', 'w') as f:
+    f.write('Election Results\n-------------------------\nTotal Votes: '+str(total)+'\n')
+    i = 0
+    for k in candnames:
+        f.write(k + ": " + str(candprop[i]) + "% (" + str(candvotes[i])+ ")\n")
+        i += 1
+    
+    f.write('-------------------------------\nWinner: ' + winner + '\n-------------------------------')
